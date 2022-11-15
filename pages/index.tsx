@@ -1,7 +1,11 @@
+import { MovingPlane } from '@modules/three';
+import { CanvasWrapper } from '@ui/canvas-wrapper';
+
 export default function Home() {
   return (
-    <div>
-      <h1>Enlo</h1>
-    </div>
+    <CanvasWrapper>
+      <ambientLight intensity={1} />
+      <MovingPlane />
+    </CanvasWrapper>
   );
 }
